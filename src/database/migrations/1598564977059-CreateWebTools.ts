@@ -10,6 +10,8 @@ export default class CreateWebTools1598564977059 implements MigrationInterface {
             name: 'id',
             type: 'int',
             isPrimary: true,
+            isGenerated: true,
+            generationStrategy: 'increment',
           },
           {
             name: 'title',
@@ -27,6 +29,7 @@ export default class CreateWebTools1598564977059 implements MigrationInterface {
             name: 'tags',
             type: 'varchar',
             isArray: true,
+            isNullable: true,
           },
           {
             name: 'created_at',
